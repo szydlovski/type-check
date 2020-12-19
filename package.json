@@ -1,0 +1,20 @@
+{
+  "name": "@szydlovski/type-check",
+  "version": "0.1.0",
+  "description": "check types of variables",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nyc mocha test/index.test.js"
+  },
+  "keywords": [
+    "type"
+  ],
+  "repository": "https://github.com/szydlovski/type-check",
+  "author": "Kamil Szydlowski",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
+  }
+}
