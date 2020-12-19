@@ -2,7 +2,7 @@
   "name": "@szydlovski/type-check",
   "version": "0.1.0",
   "description": "check types of variables",
-  "main": "src/index.js",
+  "main": "src/type-check.js",
   "scripts": {
     "test": "nyc mocha test/index.test.js"
   },
