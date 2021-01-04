@@ -7,7 +7,10 @@ function isObject(value) {
 }
 
 function isPlainObject(value) {
-	return Object.prototype.toString.call(value) === '[object Object]' && Object.getPrototypeOf(value).isPrototypeOf(Object);
+	return (
+		Object.prototype.toString.call(value) === '[object Object]' &&
+		Object.getPrototypeOf(value).isPrototypeOf(Object)
+	);
 }
 
 function isArray(value) {
@@ -45,40 +48,40 @@ function isNull(value) {
 }
 
 function isBigInt(value) {
-  return typeof value === 'bigint';
+	return typeof value === 'bigint';
 }
 
 function isSymbol(value) {
-  return typeof value === 'symbol';
+	return typeof value === 'symbol';
 }
 
 module.exports = {
 	isFunction,
-  isObject,
-  isPlainObject,
-  isArray,
-  isNumber,
-  isInteger,
-  isFloat,
+	isObject,
+	isPlainObject,
+	isArray,
+	isNumber,
+	isInteger,
+	isFloat,
 	isString,
 	isBoolean,
-  isUndefined,
-  isNull,
-  isBigInt,
-  isSymbol,
-  map: {
-    function: isFunction,
-    object: isObject,
-    plainObject: isPlainObject,
-    array: isArray,
-    number: isNumber,
-    integer: isInteger,
-    float: isFloat,
-    string: isString,
-    boolean: isBoolean,
-    undefined: isUndefined,
-    null: isNull,
-    bigInt: isBigInt,
-    symbol: isSymbol
-  }
+	isUndefined,
+	isNull,
+	isBigInt,
+	isSymbol,
+	map: {
+		function: isFunction,
+		object: isObject,
+		plainObject: isPlainObject,
+		array: isArray,
+		number: isNumber,
+		integer: isInteger,
+		float: isFloat,
+		string: isString,
+		boolean: isBoolean,
+		undefined: isUndefined,
+		null: isNull,
+		bigInt: isBigInt,
+		symbol: isSymbol,
+	},
 };
